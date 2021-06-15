@@ -1,0 +1,482 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+}
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), url(../image/banner.png);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+
+}
+nav{
+   display: flex;
+   padding: 2vh 6vh;
+   justify-content: space-between;
+   align-items: center;
+}
+nav img{
+   width: 150px;
+}
+.nav-menu{
+   flex: 1;
+   text-align: right;
+}
+.nav-menu ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+   color: white;
+   font-size: 13px;
+}
+a{
+   text-decoration: none;
+}
+.nav-menu ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background-color: orangered;
+   display: block;
+   margin: auto;
+   transition: 0.5s ease-in;
+}
+.nav-menu ul li:hover::after{
+   width: 100%;
+}
+.text-menu{
+   width: 90%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   color: white;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-menu h1{
+   font-size: 56px;
+}
+.text-menu p{
+   font-size: 14px;
+   margin: 10px 0 40px;
+}
+.breack{
+   display: block;
+}
+.hero-btn{
+   text-decoration: none;
+   color: #fff;
+   font-size: 12px;
+   padding: 13px 32px;
+   border: 2px solid #fff;
+   background: transparent;
+}
+.hero-btn:hover{
+   background: orangered;
+   border: 2px solid orangered;
+   transition: 1s;
+}
+.nav-menu .fa, nav .fa-bars{
+   display:none;
+}
+
+@media (max-width:850px) {
+   .text-menu h1{
+      font-size:40px;
+   }
+}
+@media (max-width: 700px) {
+   .text-menu h1{
+      font-size:25px
+   }
+   .text-menu p{
+      font-size: 12px;
+   }
+   .breack{
+      display: inline-block;
+   }
+   .nav-menu{
+      position: absolute;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      background: orangered;
+      text-align: left;
+      z-index: 2;
+      box-sizing: border-box;
+      transition: 0.7s ease-in;
+   }
+   .nav-menu ul li{
+      display: block;
+      font-weight: 600;
+      padding: 15px 15px;
+   }
+   .nav-menu ul li:hover{
+      margin-left: 5px;
+      transition: 0.5s;
+   }
+   .nav-menu ul{
+      padding: 30px;
+   }
+   .nav-menu .fa{
+      display: block;
+      font-size: 20px;
+      margin: 10px 10px;
+      color: #fff;
+      cursor: pointer;
+   }
+   nav .fa-bars{
+      display: block;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+   }
+
+}
+/*------------------------------ Why choose our versity ------------------------------ */
+.why-us{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   margin-top: 100px;
+}
+.why-us h2{
+   font-size: 36px;
+   color: #000;
+   font-weight: 600;
+}
+.why-us p{
+   font-size: 14px;
+   color: #777;
+   font-weight: 300;
+   line-height: 22px;
+}
+.why-us p{
+   margin-top: 10px;
+   font-size: 14px;
+   color: #777;
+   font-weight: 300;
+   line-height: 22px;
+}
+.card-row{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5%;
+   margin: 50px 15px 0;
+}
+.card-col{
+   flex-basis: 31%;
+   background: rgba(255, 173, 173, 0.288);
+   padding: 20px  12px;
+   border-radius: 10px;
+   box-sizing: border-box;
+   transition: 0.8s;
+}
+.card-col h2{
+   font-size: 20px;
+   font-weight: 600;
+}
+.card-col p{
+   color: rgb(73, 72, 77);
+   font-weight: 400;
+   opacity: 0.8;
+}
+.card-col:hover{
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.404);
+}
+
+
+
+@media (max-width:850px) {
+   .why-us h2{
+      font-size: 27px;
+   }
+}
+@media (max-width:700px) {
+   .why-us h2{
+      font-size: 24px;
+   }
+   .why-us p{
+      font-size: 12px;
+   }
+   .card-row{
+      flex-direction: column;
+   }
+   .card-col{
+      margin-bottom: 35px;
+      flex: 1;
+   }
+}
+
+/* ----------------campus-------------------- */
+.campus{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   margin-top: 100px;
+}
+.campus h2{
+   font-size: 36px;
+   color: #000;
+   font-weight: 600;
+}
+.campus p{
+   font-size: 14px;
+   color: #777;
+   font-weight: 300;
+   line-height: 22px;
+   margin-bottom: 40px;
+}
+.campus-col{
+   flex-basis: 30%;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   position: relative;
+   overflow: hidden;
+}
+.campus-col img{
+   width: 100%;
+   display: block;
+}
+.layer{
+   position: absolute;
+   background: transparent;
+   width: 100%;
+   height: 100%;
+   top:0;
+   left: 0;
+   transition: 1s;
+}
+.layer:hover{
+   background: rgba(255, 0, 0, 0.74);
+}
+.layer h3{
+   text-transform: uppercase;
+   color: white;
+   font-weight: 500;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%);
+   opacity: 0;
+   transition: 1s;
+}
+.layer:hover h3{
+   bottom: 45%;
+   opacity: 1;
+}
+/* ---------------------facilities----------------- */
+.facilities{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   margin-top: 100px;
+}
+.facilities-col{
+   flex-basis: 30%;
+   position: relative;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   overflow: hidden;
+}
+.facilities-col img{
+   width: 100%;
+   transition: 0.8s;
+}
+.facilities-col img:hover{
+   opacity: 0.8;
+   transform: rotate(1deg);
+}
+.facilities-col h3{
+   font-weight: 500;
+   text-align: left;
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+.facilities-col p{
+   text-align: left;
+}
+/*-------------------- Testimonials-------------------- */
+.testimonial{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   margin-top: 100px;
+}
+.testimonials-col{
+   flex-basis: 44%;
+   background: rgba(255, 173, 173, 0.288);
+   text-align: left;
+   border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 26px;
+   display: flex;
+   cursor: pointer;
+   overflow: hidden;
+}
+.testimonials-col img{
+   height: 44px;
+   border-radius: 50%;
+   margin-left: 5px;
+   margin-right: 36px;
+}
+.testimonials-col p{
+   padding: 0;
+}
+.testimonials-col h3{
+   text-align: left;
+   font-weight: 600;
+   font-size: 17px;
+}
+.testimonials-col h3::before{
+   content: '- ';
+}
+.testimonials-col .fa-star, .testimonials-col .fa{
+   color: #ffa600;
+}
+
+
+@media (max-width:850px) {
+   .campus h2{
+      font-size: 27px;
+      margin-bottom: 10px;
+      font-weight: 600;
+   }
+}
+@media  (max-width:700px) {
+   .campus h2{
+      font-size: 24px;
+      font-weight: 600;
+   }
+   .testimonials-col img{
+      padding: 0;
+      margin-left: 5px;
+   }
+   .testimonials-col .fa-star, .testimonials-col .fa{
+      font-size: 14px;
+   }
+   .testimonials-col h3{
+      font-size: 14px;
+   }
+   .testimonials-col h3::before{
+      content: '- ';
+   }
+   
+}
+@media (max-width:400px) {
+   .testimonials-col .fa-star, .testimonials-col .fa{
+      font-size: 12px;
+   }
+   .testimonials-col h3{
+      font-size: 12px;
+   }
+   .testimonials-col h3::before{
+      content: '- ';
+   }
+   
+}
+.enroll{
+   width: 80%;
+   min-height: 30vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), url(../image/banner2.jpg);
+   background-position: center;
+   background-repeat: repeat;
+   border-radius: 10px;
+   text-align: center;
+   margin: auto;
+   background-size: cover;
+   margin-left: 100px 0;
+   color: #fff;
+   padding: 100px auto;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+.cta{
+   margin: 40px 0;
+}
+.cta h2{
+   margin-bottom: 44px;
+   font-size: 36px;
+   font-weight: 600;
+}
+.cta a{
+   display: inline-block
+}
+@media (max-width:1146px) {
+   .cta h2{
+      font-size: 30px;
+   }
+   
+}
+@media (max-width:1090px) {
+   .cta h2{
+      font-size: 25px;
+   }
+   
+}
+@media (max-width:700px) {
+   .cta h2{
+      font-size: 20px;
+      padding: 0 10px;
+   }
+}
+/*---------------------------- footer ---------------------------- */
+.about{
+   width: 80%;
+   padding: 100px 0 20px 0;
+   text-align: center;
+   margin: auto;
+}
+.about h2{
+   font-weight: 600;
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+.about p{
+   font-size: 14px;
+   color: #777;
+   text-align: center;
+}
+.about .fab{
+   color: orangered;
+   margin-left: 20px;
+   margin-top: 20px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.about .fab:hover{
+   transform: rotate(120deg);
+   
+}
+.farb{
+   padding: 30px 0 0;
+}
+.farb .far{
+   color: orangered;
+}
+.farb a{
+   text-decoration: none;
+
+}
+.farb a:hover{
+   text-decoration: underline;
+}
+@media (max-width:850px) {
+   .about h2{
+      font-size: 27px;
+      margin-bottom: 10px;
+      font-weight: 600;
+   }
+}
+@media  (max-width:700px) {
+   .about h2{
+      font-size: 24px;
+      font-weight: 600;
+   }
+}
